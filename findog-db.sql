@@ -6,7 +6,7 @@
 CREATE TABLE `User` (
     `userId` int AUTO_INCREMENT NOT NULL ,
     `email` varchar(30)  NOT NULL ,
-    `nickname` varchar9(20)  NOT NULL ,
+    `nickname` varchar(20)  NOT NULL ,
     `password` varchar(400)  NOT NULL ,
     `phoneNum` varchar(15)  NOT NULL ,
     `profileUrl` text  NULL ,
