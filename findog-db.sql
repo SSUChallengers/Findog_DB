@@ -77,6 +77,7 @@ CREATE TABLE `Comment` (
     `userId` int  NOT NULL ,
     `postId` int  NOT NULL ,
     `content` text  NOT NULL ,
+    'commentStatus' varchar(10) NOT NULL DEFAULT 'active',
     `commentCreateAt` timestamp  NOT NULL DEFAULT current_timestamp,
     `commentUpdateAt` timestamp  NOT NULL DEFAULT current_timestamp,
     PRIMARY KEY (
