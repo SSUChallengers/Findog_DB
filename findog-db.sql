@@ -39,8 +39,7 @@ CREATE TABLE `Animal` (
     `careNm` varchar(50)  NOT NULL ,
     `careTel` varchar(14)  NOT NULL ,
     `careAddr` varchar(200)  NOT NULL ,
-    `animalCreateAt` timestamp  NOT NULL DEFAULT current_timestamp,
-    `animalUpdateAt` timestamp  NOT NULL DEFAULT current_timestamp,
+    `orgNm` varchar(30) NOT NULL,
     PRIMARY KEY (
         `animalId`
     )
