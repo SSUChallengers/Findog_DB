@@ -74,7 +74,7 @@ CREATE TABLE `Like` (
 
 CREATE TABLE `Comment` (
     `commentId` int AUTO_INCREMENT NOT NULL ,
-    `parentCommentId` int  NOT NULL ,
+    `parentCommentId` int  NOT NULL DEFAULT 0,
     `userId` int  NOT NULL ,
     `postId` int  NOT NULL ,
     `content` text  NOT NULL ,
