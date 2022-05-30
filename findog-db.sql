@@ -49,8 +49,10 @@ CREATE TABLE `Post` (
     `postId` int AUTO_INCREMENT NOT NULL ,
     `userId` int  NOT NULL ,
     `title` varchar(70)  NOT NULL ,
+    `category` int DEFAULT 1
+    `region` int DEFAULT 1
     `content` text  NOT NULL ,
-    `hits` int  NOT NULL ,
+    `hits` int  NOT NULL DEFAULT 0,
     `postCreateAt` timestamp  NOT NULL DEFAULT current_timestamp,
     `postUpdateAt` timestamp  NOT NULL DEFAULT current_timestamp,
     PRIMARY KEY (
